@@ -7,7 +7,7 @@
 user_name = input("Please input user-name : ")
 
 # Starting a conditional block to check the length of the string
-if len(list(user_name)) >= 3:
+if len(user_name) >= 3:
     # using f-string to interpolate the username and display the output
     print(f"Hello {user_name.capitalize()}, How are you?")
 else:

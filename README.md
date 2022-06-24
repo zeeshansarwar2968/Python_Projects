@@ -13,3 +13,15 @@
 5. Harmonic Number
 
 6. Factors
+
+> Solving some functional problems in python, namely:
+
+1. 2D Array Generator
+
+2. Sum of three Integer adds to ZERO
+
+3. Euclidean Distance Calculation Problem
+
+4. Calculations of roots of a Quadratic Equation
+
+5. WindChill Calculation Problem

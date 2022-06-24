@@ -6,8 +6,7 @@
 # d. O/P -> One Output is number of distinct triplets as well as the second output is to
 # print the distinct triplets.
 
-# function to find the triplet value and return it on invocation
-
+# function to find the triplet value and return it on invocation/function-call
 def find_triplets(n, arr):
     """
     Function to calculate sum of three integers that add to zero
@@ -24,7 +23,7 @@ def find_triplets(n, arr):
                     found = True
                     return arr[i], arr[j], arr[k]  # Returning the elements If a+b+c = 0
     if not found:
-        return "Does not exist "
+        return "Does not exist"
 
 
 user_input = input("Please provide the number of integers : ")

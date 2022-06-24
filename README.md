@@ -1,6 +1,6 @@
 # Python Projects
 
-> Solving some basic core problems in python, namely:
+> Solving basic core problems in python, namely:
 
 1. User Input and Replace String Template “Hello <<UserName>>, How are you?”
 
@@ -14,7 +14,7 @@
 
 6. Factors
 
-> Solving some functional problems in python, namely:
+> Solving functional problems in python, namely:
 
 1. 2D Array Generator
 
@@ -25,3 +25,13 @@
 4. Calculations of roots of a Quadratic Equation
 
 5. WindChill Calculation Problem
+
+> Solving Logical problems in python, namely:
+
+1. Gambler
+
+2. Coupon Numbers
+
+3. Simulate Stopwatch Program
+
+4. Cross Game or Tic-Tac-Toe Game

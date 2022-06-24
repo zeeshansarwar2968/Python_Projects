@@ -25,7 +25,7 @@
 > Root 1 of x = (-b + sqrt(delta))/(2*a)
 > Root 2 of x = (-b - sqrt(delta))/(2*a)
 
-1. WindChill Problem 
+5. WindChill Problem 
 > Write a program WindChill.java that takes two double command-line arguments t
 > and v and prints the wind chill. Use Math.pow(a, b) to compute ab. Given the
 > temperature t (in Fahrenheit) and the wind speed v (in miles per hour), the

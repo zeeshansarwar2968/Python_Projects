@@ -1,6 +1,10 @@
 """
 8. Write a Python program to create a histogram from a given list of integers.
 """
+"""
+solved by : Zeeshan Sarwar
+"""
+
 
 size_list = int(input("Please define the size of array : "))
 

@@ -1,26 +1,29 @@
-import os
-import time
+"""
+22. Write a Python program to get the command-line arguments (name of the script, the number
+of arguments, arguments) passed to a script.
+"""
+"""
+solved by : Zeeshan Sarwar
+"""
+import sys
 
-def clear_scr():
-    """
-    Function To Clear the screen or terminal
-    :return: clear the screen
-    """
-    return os.system('cls')
+# print(f"arguments : {sys.argv}")
+# print(f"Number of arguments: {len(sys.argv)} arguments.")
+# print(f"Argument List: {str(sys.argv)}")
 
+arg_count = len(sys.argv)
+print(f"Total arguments passed : {arg_count}")
 
-def clear1():
-    # for windows
-    if os.name == 'nt':
-        _ = os.system('cls')
+print(f"Name of the python script/file : {sys.argv[0]}")
 
-    # for mac and linux(here, os.name is 'posix')
-    else:
-        _ = os.system('clear')
+# Printing the arguments :
+for i in range(1, arg_count):
+    print(f"Argument {i} : {sys.argv[i]}")
 
-print("Hello, World!!\n"*5)
+temp_sum = 0
 
-time.sleep(2)
+for i in range(1, arg_count):
+    temp_sum += int(sys.argv[i])
 
+print(f"The temporary summation is : {temp_sum}")
 
-os.system('clear')

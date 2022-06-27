@@ -1,9 +1,8 @@
 """
-15. Write a python program to access environment variables.
+33. Write a Python program to get the users environment.
 """
-"""
-solved by : Zeeshan Sarwar
-"""
+# Solved by Zeeshan Sarwar
+
 import os
 
 """
@@ -11,7 +10,7 @@ The os.environ variable is a dictionary-like object. If we print it, all the env
 name and values will get printed.
 """
 print("-----------------------------------------------------------------------------------------------")
-print("Printing the value stored for the env variable 'SYSTEMDRIVE' : ", os.environ['SYSTEMDRIVE'])
+print("Printing the value stored for the env variable 'USERNAME' : ", os.environ['USERNAME'])
 list_dir = os.environ
 
 print("-----------------------------------------------------------------------------------------------")
@@ -20,6 +19,3 @@ print("")
 for i in list_dir:
     print(f"{i} : {list_dir[i]}")
 
-
-
-# print(list_dir)

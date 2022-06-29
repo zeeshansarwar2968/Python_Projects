@@ -3,7 +3,22 @@
 """
 # Solved by Zeeshan Sarwar
 
-sample_tuple = ("Hello world", 432156, 432156, False, 34.6578, [1, 2, 43, 'Junction'], {23: "Zeeshan", 24: "Sarwar"})
-print(f"The sample is :\n\t>>>> {sample_tuple}")
-list1 = [x for x in sample_tuple if sample_tuple.count(x) > 1]
-print(f"\nThe repeated elements in the tuple are : {list1}")
+
+def check_tuple(element, tupledata):
+    """
+    return true if element in present in the tuple
+    :param element: element
+    :param tupledata: tuple
+    :return: boolean
+    """
+    return element in tupledata
+
+
+user_input = input("Please provide the count of user input : ")
+size_list = int(user_input)
+print("Please provide the elements for the tuple : ")
+list_data = [input("Element : ") for i in range(size_list)]
+sample_tuple = tuple(list_data)
+
+check_element = input("Please provide the element to check presence in the tuple : ")
+print(f"\nIs the element {check_element} present in the tuple : {check_tuple(check_element, sample_tuple)}")

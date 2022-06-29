@@ -1,6 +1,12 @@
-# Questions on Arrays
+# Questions on lists, tuples, dictionaries, sets and Arrays
 
-> 1. Write a Python program to create an array of 5 integers and display the array items. Access individual element through indexes.
-> 2. Write a Python program to reverse the order of the items in the array.
-> 3. Write a Python program to get the number of occurrences of a specified element in an array.
-> 4. Write a Python program to remove the first occurrence of a specified element from an array.
+The following are few properties of the data structures present in python : 
+
+> There are quite a few data structures available. 
+> The built in data structures are: lists, tuples, dictionaries, sets
+> Lists and tuples are ordered sequences of objects.
+> list and tuples can contain any type of objects
+> Lists and tuples are like arrays. 
+> Tuples are immutables.
+> Lists are mutable so they can be extended or reduced at will.
+> Sets are mutable unordered sequence of unique elements whereas frozensets are immutable sets.

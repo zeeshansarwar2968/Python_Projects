@@ -10,12 +10,8 @@ sample_list = ['About', 'Absolutely', 'After', 'Aint', 'Alabama', 'AlabamaBill',
 dict_temp = {}
 for word in sample_list:
     f = word[0]
-    if f in dict_temp.keys():
-        dict_temp[f].append(word)
-    else:
-        dict_temp[f] = [word]
-
-
+    if f in dict_temp.keys(): dict_temp[f].append(word)
+    else: dict_temp[f] = [word]
 
 print(dict_temp)
 

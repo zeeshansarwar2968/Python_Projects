@@ -8,10 +8,6 @@ Expected Result : 2
 
 
 sample_list = ['abc', 'xyz', 'aba', '1221', 'q', 'p']
-
-temp_list = [x for x in sample_list if len(x) >= 2]
-
-final_list = [x for x in temp_list if x[0] == x[-1]]
-
+final_list = [x for x in sample_list if len(x) >= 2 and x[0] == x[-1]]
 print(f"The count of strings : {len(final_list)}")
 

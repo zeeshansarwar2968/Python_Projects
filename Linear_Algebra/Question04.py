@@ -3,6 +3,22 @@
 """
 # Solution by Zeeshan Sarwar
 
+
+def matrix_mult(matrix1, matrix2):
+    """
+    Returns a matrix of teh product of matrrix1 and matrix2
+    :param matrix1: list of lists (mxn)
+    :param matrix2: list of lists (mxn)
+    :return: list of lists (mxn)
+    """
+    temp = [[0 for i in range(len(matrix2[0]))] for i in range(len(matrix1))]
+    for i in range(len(X)):  # looping over the rows of matrix A
+        for j in range(len(Y[0])):  # looping over the columns of matrix B
+            for k in range(len(Y)):  # looping over the rows of matrix B
+                temp[i][j] += X[i][k] * Y[k][j]
+    return temp
+
+
 # Matrix Multiplication
 X = [[12, 7, 3],  # mxm
      [4, 5, 6],
@@ -11,11 +27,10 @@ Y = [[5, 8, 1],  # mxm
      [6, 7, 3],
      [4, 5, 9]]
 
-Z = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]  # mxm
+try:
+    Z = matrix_mult(X, Y)
+    for i in Z: print(i)
+except Exception as e:
+    print(f"Execution Interrupted : {e}")
 
-for i in range(len(X)):  # looping over the rows of matrix A
-    for j in range(len(Y[0])):  # looping over the columns of matrix B
-        for k in range(len(Y)):  # looping over the rows of matrix B
-            Z[i][j] += X[i][k] * Y[k][j]
 
-for i in Z: print(i)

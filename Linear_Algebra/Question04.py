@@ -12,10 +12,10 @@ def matrix_mult(matrix1, matrix2):
     :return: list of lists (mxn)
     """
     temp = [[0 for i in range(len(matrix2[0]))] for i in range(len(matrix1))]
-    for i in range(len(X)):  # looping over the rows of matrix A
-        for j in range(len(Y[0])):  # looping over the columns of matrix B
-            for k in range(len(Y)):  # looping over the rows of matrix B
-                temp[i][j] += X[i][k] * Y[k][j]
+    for i in range(len(matrix1)):  # looping over the rows of matrix A
+        for j in range(len(matrix2[0])):  # looping over the columns of matrix B
+            for k in range(len(matrix2)):  # looping over the rows of matrix B
+                temp[i][j] += matrix1[i][k] * matrix2[k][j]
     return temp
 
 

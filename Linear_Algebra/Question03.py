@@ -4,6 +4,7 @@
 """
 # Solution by Zeeshan Sarwar
 
+
 def vector_mult(matrix, vector):
     """
     Return a vector as a result of multiplication of a matrix(nxn) with a vector(nx1)
@@ -11,7 +12,7 @@ def vector_mult(matrix, vector):
     :param vector: a column-1 matrix(list)
     :return: a column-1 matrix(list)
     """
-    temp = [[i[j] * Y[j] for j in range(len(i))] for i in X]
+    temp = [[i[j] * vector[j] for j in range(len(i))] for i in matrix]
     return [sum(i) for i in temp]
 
 

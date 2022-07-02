@@ -13,7 +13,7 @@ def matrix_addition(matrix1, matrix2):
      :param matrix2: array of arrays
      :return: array of arrays
      """
-     return [[X[i][j] + Y[i][j] for j in range(len(X[i]))] for i in range(len(X))] if len(matrix1) == len(matrix2) and len(matrix1[0]) == len(matrix2[0]) else "" "The matrices are not of same order"
+     return [[matrix1[i][j] + matrix2[i][j] for j in range(len(matrix1[i]))] for i in range(len(matrix1))] if len(matrix1) == len(matrix2) and len(matrix1[0]) == len(matrix2[0]) else "" "The matrices are not of same order"
 
 
 # Matrix Addition

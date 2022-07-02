@@ -1,4 +1,4 @@
-# Probability and Statistics Questions
+# Probability and Statistics ProblemSet
 
 > 1. Write a program to find probability of drawing an ace from pack of cards
 > 

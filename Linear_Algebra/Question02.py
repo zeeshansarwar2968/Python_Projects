@@ -13,7 +13,8 @@ def scalar_mult(matrix, scaler):
      :param scaler: numeric value
      :return: list of lists
      """
-     return [[X[i][j] * 9 for j in range(len(X[i]))] for i in range(len(X))]
+     return [[matrix[i][j] * scaler for j in range(len(matrix[i]))] for i in range(len(matrix))]
+
 
 X = [[12, 7, 3],
      [4, 5, 6],
@@ -24,6 +25,7 @@ Y = 9
 try:
      Z = scalar_mult(X, Y)
      for i in Z: print(i)
+
 except Exception as e:
      print(f"Execution interrupted due to {e}")
 

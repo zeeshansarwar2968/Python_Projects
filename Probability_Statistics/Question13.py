@@ -12,14 +12,13 @@ import math
 def correlation_coeff(X, summation_X1X2, summation_X1, summation_X2, summation_X1_squared, summation_X2_squared):
     """
     Returns the z-value of the given input
-    :param X: a random variable input value from a normal distribution
-    :param summation_X1X2: mean value of a normal distribution
-    :param summation_X1: standard deviation of X
-    :param summation_X2: standard deviation of X
-    :param summation_X1_squared: standard deviation of X
-    :param summation_X2_squared: standard deviation of X
-    
-    :return: Calculate and return the z-score value
+    :param X: length of collection
+    :param summation_X1X2: summation of all the multiplied values in collections X1 and X2
+    :param summation_X1: summation of all values of collection X1
+    :param summation_X2: summation of all values of collection X2
+    :param summation_X1_squared: summation of all the squared values in collection X1
+    :param summation_X2_squared: summation of all the squared values in collection X2
+    :return: Calculate and return the correlation coefficient
     """
     return ((X * summation_X1X2) - (summation_X1 * summation_X2)) / (math.sqrt((X*summation_X1_squared-summation_X1**2)*(X*summation_X2_squared-summation_X2**2)))
 
